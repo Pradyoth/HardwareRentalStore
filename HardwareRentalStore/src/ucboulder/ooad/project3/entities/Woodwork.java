@@ -6,15 +6,16 @@ public class Woodwork extends Tool{
 	
 	static int count = 5;
 	
-	private Woodwork(String name){
+	private Woodwork(String name,int nytNo){
 		this.name=name;
+		this.nytNo = nytNo;
 	}
 	
-	public static Woodwork getInstance(String name) {
+	public static Woodwork getInstance(String name,int nytNo) {
 		
 		if(count > 1) {
 			count--;
-			return new Woodwork(name);
+			return new Woodwork(name,nytNo);
 		}
 		else {
 			return null;
@@ -22,4 +23,16 @@ public class Woodwork extends Tool{
 		
 	}
 	
+	@Override
+	public int getPrice() {
+		
+		return price*nytNo;
+	}
+	
+	
+	@Override
+	public void increaseCount() {
+		
+		 count = count+1;
+	}
 }

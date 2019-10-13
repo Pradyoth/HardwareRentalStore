@@ -6,15 +6,16 @@ public class Plumbing extends Tool{
 	
 	static int count = 5;
 	
-	private Plumbing(String name){
+	private Plumbing(String name,int nytNo){
 		this.name=name;
+		this.nytNo=nytNo;
 	}
 	
-	public static Plumbing getInstance(String name) {
+	public static Plumbing getInstance(String name,int nytNo) {
 		
 		if(count > 1) {
 			count--;
-			return new Plumbing(name);
+			return new Plumbing(name,nytNo);
 		}
 		else {
 			return null;
@@ -22,4 +23,16 @@ public class Plumbing extends Tool{
 		
 	}
 	
+	@Override
+	public int getPrice() {
+		
+		return price*nytNo;
+	}
+	
+	
+	@Override
+	public void increaseCount() {
+		
+		 count = count+1;
+	}
 }

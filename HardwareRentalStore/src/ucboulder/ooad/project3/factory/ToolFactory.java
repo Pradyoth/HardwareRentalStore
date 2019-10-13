@@ -12,14 +12,14 @@ import ucboulder.ooad.project3.entities.Yardwork;
 
 public class ToolFactory {
 
-	public static Tool getTool(String type,String name) {
+	public static Tool getTool(String type,String name,int nytNo) {
 		
-		if(type.equalsIgnoreCase("Concrete")) return Concrete.getInstance(name);
-		if(type.equalsIgnoreCase("Painting")) return Painting.getInstance(name);
-		if(type.equalsIgnoreCase("Plumbing")) return Plumbing.getInstance(name);
+		if(type.equalsIgnoreCase("Concrete")) return Concrete.getInstance(name,nytNo);
+		if(type.equalsIgnoreCase("Painting")) return Painting.getInstance(name,nytNo);
+		if(type.equalsIgnoreCase("Plumbing")) return Plumbing.getInstance(name,nytNo);
 		
-		if(type.equalsIgnoreCase("Woodwork")) return Woodwork.getInstance(name);
-		if(type.equalsIgnoreCase("Yardwork")) return Yardwork.getInstance(name);
+		if(type.equalsIgnoreCase("Woodwork")) return Woodwork.getInstance(name,nytNo);
+		if(type.equalsIgnoreCase("Yardwork")) return Yardwork.getInstance(name,nytNo);
 		
 		else 
 			
