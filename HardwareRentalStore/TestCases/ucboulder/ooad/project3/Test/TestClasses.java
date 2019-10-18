@@ -19,6 +19,7 @@ import ucboulder.ooad.project3.entities.Yardwork;
 import ucboulder.ooad.project3.factory.CustomerFactory;
 import ucboulder.ooad.project3.factory.ToolFactory;
 
+//This test class contains 
 public class TestClasses extends TestCase{
 	
 	Tool  t;
@@ -27,6 +28,8 @@ public class TestClasses extends TestCase{
 		
 	   }
 
+	
+	// This test method checks if right instance of tool is created for right type (Method name : getTool)
 	public void test_1(){
 		assertTrue(ToolFactory.getTool("Concrete","ConcreteTool 1", 3) instanceof Concrete && 
 				ToolFactory.getTool("Painting","PaintingTool 1", 3) instanceof Painting &&
@@ -36,7 +39,7 @@ public class TestClasses extends TestCase{
 				ToolFactory.getTool("Yardhjsjdbwork","RandomTool 1", 3)==null);
 	   }
 	
-	
+	//This test method checks if right instance of add on tool is created for right type  (Method name : getAddOnTool)
 	  public void test_2(){
 		  
 		  assertTrue(ToolFactory.getAddOnTool("AccessoryKit","AccessoryKit 1",t, 3)
@@ -49,7 +52,7 @@ public class TestClasses extends TestCase{
 		  }
 	 
 	   
-	
+	//This test method check whether particular tool  is moved out of inventory after purchase  (Method name : getInstance)
 	public void test_3(){
 		
 		int before = Concrete.count;
@@ -57,15 +60,17 @@ public class TestClasses extends TestCase{
 	    assertTrue((before-1) == Concrete.count);
 	   }
 	
+	//This test method checks price of decorated tool is valid or not  (Method name : getTotalPrice)
 	public void test_4(){
 	      Tool t1 = ToolFactory.getTool("Yardwork","YardworkTool 1", 3) ;
 	      AddOnDecorator dc = (AddOnDecorator) ToolFactory.getAddOnTool("ProtectiveGearPack","ProtectiveGearPack 1",t1, 3) ;
 	      RentalRecord rr = new RentalRecord(3);
 	      rr.addDocoratedTools(dc);
-	    //  System.out.println(rr.getTotalPrice());
+	    
 	      assertTrue(rr.getTotalPrice() == 8*3+25);
 	   }
 	
+	//This test method checks for return are properly handles by increasing the inventory count (Method name : returnRental)
 	public void test_5(){
 		Tool t1 = ToolFactory.getTool("Yardwork","YardworkTool 1", 3) ;
 	      AddOnDecorator dc = (AddOnDecorator) ToolFactory.getAddOnTool("ProtectiveGearPack","ProtectiveGearPack 1",t1, 3) ;
@@ -77,6 +82,7 @@ public class TestClasses extends TestCase{
 	      assertTrue(countBeforeReturing+1 == countAfterReturning);
 	   }
 	
+	//This test method checks for price of decorated tool only (Method name : getPrice)
 	public void test_6(){
 	      
 		  Tool t1 = ToolFactory.getTool("Plumbing","Plumbing Tool 1", 3) ;
@@ -88,11 +94,13 @@ public class TestClasses extends TestCase{
 		
 	   }
 	
+	//This test method checks for price of  tool only (Method name : getPrice)
 	public void test_7(){
 		Tool t1 = ToolFactory.getTool("Woodwork","Woodwork Tool 1", 3) ;
 		assertTrue(t1.getPrice()==Woodwork.price*3);
 	   }
 	
+	//This test method checks if right instance of Customer is created for right type (Method name : getCustomer)
 	public void test_8(){
 		assertTrue(CustomerFactory.getCustomer("RegularCustomer","Regular Customer 1") instanceof RegularCustomer && 
 				CustomerFactory.getCustomer("BusinessCustomer","Business Customer 1") instanceof BusinessCustomer &&
@@ -101,12 +109,14 @@ public class TestClasses extends TestCase{
 		
 	   }
 	
+	////This test method check whether particular tool  is moved out of inventory after purchase  (Method name : getInstance)
 	public void test_9(){
 		int before = Painting.count;
 		Painting.getInstance("Painting Tool", 3);
 	    assertTrue((before-1) == Painting.count);
 	   }
 	
+	//This test method check for validity of number of tools rented by customer (Method name : getNumberOfToolsRented)
 	public void test_10(){
 		
 		  Tool t1 = ToolFactory.getTool("Plumbing","Plumbing Tool 1", 3) ;
