@@ -38,7 +38,7 @@ public class Main {
 			store.addCustomersToStore(customer);
 		}
 		
-		
+		int sumOfAllDaysTotal = 0;
 		for (int i = 0 ; i < 34 ; i++) {
 			System.out.println("List of tools in the inventory");
 			if (Painting.count!=0) {
@@ -73,8 +73,8 @@ public class Main {
 //						break;
 					}
 					else {
-						System.out.println("The active rentals are.. ");
-						System.out.println(customerRentalRecordList.get(j));
+						System.out.println("Customer name: " + customer.getCustomerName() + "has rented ");
+						
 					}
 						
 				}
@@ -147,6 +147,7 @@ public class Main {
 				}
 				customer.addRentalRecord(rentalRecord);
 				totalPrice = rentalRecord.getTotalPrice();
+				sumOfAllDaysTotal = sumOfAllDaysTotal + totalPrice;
 				System.out.println("Price of the rental record is " +totalPrice);
 				
 			}
@@ -203,6 +204,7 @@ public class Main {
 				}
 				customer.addRentalRecord(rentalRecord);
 				totalPrice = rentalRecord.getTotalPrice();
+				sumOfAllDaysTotal += totalPrice;
 				System.out.println("Price of the rental record is " +totalPrice);
 			}
 				if (customer.getClass().getSimpleName().equals("CasualCustomer")) {
@@ -258,6 +260,7 @@ public class Main {
 				}
 				customer.addRentalRecord(rentalRecord);
 				totalPrice = rentalRecord.getTotalPrice();
+				sumOfAllDaysTotal += totalPrice;
 				System.out.println("Price of the rental record is " +totalPrice);
 				
 				
@@ -271,12 +274,13 @@ public class Main {
 			
 			
 		}
-		List<Customer> customers = store.getCustomersFromStore();
+		List<Customer> customers = store.getCustomersFromStore();//					System.out.println("type is " +type);
+
 		System.out.println("total number of completed rentals");
 		int totalCompletedRentals = 0;
 		int countBusiness = 0;
 		int countRegular = 0;
-		int countCasual = 0;
+		int countCasual = 0; 
 		for(Customer customer:customers)
 		{
 			String type = customer.getClass().getSimpleName();
@@ -286,7 +290,7 @@ public class Main {
 			for (RentalRecord rentalRecord: customerRentalRecordList) {
 				if (rentalRecord.getStatus() == false ) {
 					totalCompletedRentals++;
-					System.out.println("type is " +type);
+//					System.out.println("type is " +type);
 					if (type.equals("RegularCustomer")){
 						countRegular++;
 					}
@@ -305,7 +309,7 @@ public class Main {
 		System.out.println("Total completed rentals for regular customer is " +countRegular);
 		System.out.println("Total completed rentals for business customer is " +countBusiness);
 		System.out.println("Total completed rentals for casual customer is " +countCasual);
-
+		System.out.println("Total profit of store for the entire period " +sumOfAllDaysTotal);
 		
 	}
 
