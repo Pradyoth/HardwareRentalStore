@@ -2,7 +2,7 @@ package ucboulder.ooad.project3.entities;
 
 public class Woodwork extends Tool{
 
-	static final int price = 8;
+	public static final int price = 8;
 	
 	public static int count = 5;
 	

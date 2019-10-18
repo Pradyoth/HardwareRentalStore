@@ -2,7 +2,7 @@ package ucboulder.ooad.project3.entities;
 
 public class Plumbing extends Tool{
 
-	static final int price = 7;
+	public static final int price = 7;
 	
 	public static int count = 5;
 	
