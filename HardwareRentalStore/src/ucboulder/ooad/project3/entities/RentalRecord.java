@@ -9,9 +9,11 @@ import ucboulder.ooad.project3.decorator.AddOnDecorator;
 public class RentalRecord {
 
 	public int returnedDay;
+	boolean status;
 	
 	public RentalRecord(int returnDay) {
 		this.returnedDay = returnDay;
+		this.status = true;
 	}
 	
 	public List<AddOnDecorator> docoratedTools = new ArrayList<AddOnDecorator>();
@@ -26,6 +28,12 @@ public class RentalRecord {
 		docoratedTools.add(docoratedTool);
 		
 		
+	}
+	public boolean getStatus() {
+		return this.status;
+	}
+	public void setStatus(boolean status) {
+		this.status = status;
 	}
 
 	public int getTotalPrice() {

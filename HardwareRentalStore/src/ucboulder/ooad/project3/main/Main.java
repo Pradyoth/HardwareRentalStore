@@ -68,8 +68,9 @@ public class Main {
 					if(i==(boughtDay+noOfRentedNights)) {
 						
 						customerRentalRecordList.get(j).returnRental();
-						temp = j;
-						break;
+						customerRentalRecordList.get(j).setStatus(false);
+//						temp = j;
+//						break;
 					}
 					else {
 						System.out.println("The active rentals are.. ");
@@ -77,8 +78,8 @@ public class Main {
 					}
 						
 				}
-				if(temp!=-1)
-				customerRentalRecordList.remove(customerRentalRecordList.get(temp));
+//				if(temp!=-1)
+//				customerRentalRecordList.remove(customerRentalRecordList.get(temp));
 			}
 			
 		
@@ -92,6 +93,7 @@ public class Main {
 //				System.out.println(customer.getClass().getSimpleName());
 //			}
 			Customer customer = customers.get(randomNumber);
+			int totalPrice = -1;
 			System.out.println("Customer " + customer.getCustomerName() + " comes to the store");
 			if (customer.getClass().getSimpleName().equals("BusinessCustomer")) {
 				int numberOfTools = 3;
@@ -144,7 +146,8 @@ public class Main {
 					
 				}
 				customer.addRentalRecord(rentalRecord);
-				System.out.println("Price of the rental record is " +rentalRecord.getTotalPrice());
+				totalPrice = rentalRecord.getTotalPrice();
+				System.out.println("Price of the rental record is " +totalPrice);
 				
 			}
 			if (customer.getClass().getSimpleName().equals("RegularCustomer")) {
@@ -199,7 +202,8 @@ public class Main {
 					
 				}
 				customer.addRentalRecord(rentalRecord);
-				System.out.println("Price of the rental record is " +rentalRecord.getTotalPrice());
+				totalPrice = rentalRecord.getTotalPrice();
+				System.out.println("Price of the rental record is " +totalPrice);
 			}
 				if (customer.getClass().getSimpleName().equals("CasualCustomer")) {
 				
@@ -253,16 +257,55 @@ public class Main {
 					
 				}
 				customer.addRentalRecord(rentalRecord);
-				System.out.println("Price of the rental record is " +rentalRecord.getTotalPrice());
+				totalPrice = rentalRecord.getTotalPrice();
+				System.out.println("Price of the rental record is " +totalPrice);
 				
 				
 				
 			}
+				if (totalPrice != -1) {
+					System.out.println("Total price that the store made for day is" +totalPrice);
+				}
 			
 			
 			
 			
 		}
+		List<Customer> customers = store.getCustomersFromStore();
+		System.out.println("total number of completed rentals");
+		int totalCompletedRentals = 0;
+		int countBusiness = 0;
+		int countRegular = 0;
+		int countCasual = 0;
+		for(Customer customer:customers)
+		{
+			String type = customer.getClass().getSimpleName();
+			
+			List<RentalRecord> customerRentalRecordList = customer.getRentalRecordList();
+			int temp=-1;
+			for (RentalRecord rentalRecord: customerRentalRecordList) {
+				if (rentalRecord.getStatus() == false ) {
+					totalCompletedRentals++;
+					System.out.println("type is " +type);
+					if (type.equals("RegularCustomer")){
+						countRegular++;
+					}
+					else if (type.equals("BusinessCustomer")) {
+						countBusiness++;
+					}
+					else if (type.equals("CasualCustomer")) {
+						countCasual++;
+					}
+				}
+			}
+//			if(temp!=-1)
+//			customerRentalRecordList.remove(customerRentalRecordList.get(temp));
+		}
+		System.out.println("total completed rentals is " +totalCompletedRentals);
+		System.out.println("Total completed rentals for regular customer is " +countRegular);
+		System.out.println("Total completed rentals for business customer is " +countBusiness);
+		System.out.println("Total completed rentals for casual customer is " +countCasual);
+
 		
 	}
 
