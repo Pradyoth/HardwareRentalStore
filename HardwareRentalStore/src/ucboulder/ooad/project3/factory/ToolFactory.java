@@ -22,16 +22,16 @@ public class ToolFactory {
 		if(type.equalsIgnoreCase("Yardwork")) return Yardwork.getInstance(name,nytNo);
 		
 		else 
-			
+			 
 		return null;	
 	}
 	
 	
-	public static Tool getAddOnTool(String type,String name,Tool tool) {
+	public static Tool getAddOnTool(String type,String name,Tool tool,int nytNo) {
 	     	
-		if(type.equalsIgnoreCase("AccessoryKit")) return new AccessoryKit(tool, name);
-		if(type.equalsIgnoreCase("ExtensionCord")) return new ExtensionCord(tool, name);
-		if(type.equalsIgnoreCase("ProtectiveGearPack")) return new ProtectiveGearPack(tool, name);
+		if(type.equalsIgnoreCase("AccessoryKit")) return new AccessoryKit(tool, name,nytNo);
+		if(type.equalsIgnoreCase("ExtensionCord")) return new ExtensionCord(tool, name,nytNo);
+		if(type.equalsIgnoreCase("ProtectiveGearPack")) return new ProtectiveGearPack(tool, name,nytNo);
 		else
 		return null;
 		

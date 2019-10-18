@@ -6,8 +6,8 @@ public class ProtectiveGearPack extends AddOnDecorator{
 
 	static final int price = 25;
 	
-	public ProtectiveGearPack(Tool tool, String name) {
-		super(tool, name, price);
+	public ProtectiveGearPack(Tool tool, String name,int nytNo) {
+		super(tool, name, price,nytNo);
 	}
 
 	

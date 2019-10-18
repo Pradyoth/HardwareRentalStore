@@ -6,8 +6,8 @@ public class ExtensionCord extends AddOnDecorator{
 
 	static final int price = 16;
 	
-	public ExtensionCord(Tool tool, String name) {
-		super(tool, name, price);
+	public ExtensionCord(Tool tool, String name,int nytNo) {
+		super(tool, name, price,nytNo);
 	}
 
 	

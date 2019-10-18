@@ -7,6 +7,6 @@ public abstract class Tool {
 	public String name;
 	public abstract int getPrice();
 	public abstract void increaseCount();
-	int nytNo;
+	public int nytNo;
 	
 }

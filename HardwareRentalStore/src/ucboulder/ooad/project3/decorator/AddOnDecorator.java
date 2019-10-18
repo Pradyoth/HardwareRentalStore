@@ -6,13 +6,15 @@ public class AddOnDecorator extends Tool {
 
 	 public Tool tool;
 	public int price;
+	public int nytNo;
 	
 	
-	public AddOnDecorator(Tool tool,String name,int price) {
+	public AddOnDecorator(Tool tool,String name,int price,int nytNo) {
 		
 		this.tool = tool;
 		this.name = name;
 		this.price = price;
+		this.nytNo = nytNo;
 	}
 	
 	public int getPrice() {

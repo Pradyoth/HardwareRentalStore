@@ -1,6 +1,6 @@
 package ucboulder.ooad.project3.entities;
 
-import java.awt.Toolkit;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,6 +8,11 @@ import ucboulder.ooad.project3.decorator.AddOnDecorator;
 
 public class RentalRecord {
 
+	public int returnedDay;
+	
+	public RentalRecord(int returnDay) {
+		this.returnedDay = returnDay;
+	}
 	
 	public List<AddOnDecorator> docoratedTools = new ArrayList<AddOnDecorator>();
 		
@@ -38,6 +43,8 @@ public class RentalRecord {
 	
 	public void returnRental() {
 		
+		//System.out.println(docoratedTools.size());
+		
 		for(int i=0;i<docoratedTools.size();i++) {
 			
 			AddOnDecorator t = docoratedTools.get(i);
@@ -60,8 +67,9 @@ public class RentalRecord {
 					break;
 				}
 			}
-			//System.out.println("--");
+			//System.out.println("--"+t.tool);
 			t.tool.increaseCount();
+			System.out.println(t.tool.name + " being returned");
 					
 			
 			}
