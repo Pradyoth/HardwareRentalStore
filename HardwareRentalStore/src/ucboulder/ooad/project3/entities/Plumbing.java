@@ -4,7 +4,7 @@ public class Plumbing extends Tool{
 
 	static final int price = 7;
 	
-	static int count = 5;
+	public static int count = 5;
 	
 	private Plumbing(String name,int nytNo){
 		this.name=name;

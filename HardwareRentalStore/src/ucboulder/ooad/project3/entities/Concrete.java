@@ -4,7 +4,7 @@ public class Concrete extends Tool{
 
 	static final  int price = 6;
 	
-	static int count = 5;
+	public static int count = 5;
 	
 	private  Concrete(String name,int nytNo){
 		this.name = name;

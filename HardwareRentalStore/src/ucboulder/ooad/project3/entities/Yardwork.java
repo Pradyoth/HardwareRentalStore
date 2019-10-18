@@ -4,7 +4,7 @@ public class Yardwork extends Tool{
 
 	static final int price = 8;
 	
-	static int count = 4;
+	public static int count = 4;
 	
 	private Yardwork(String name,int nytNo){
 		this.name=name;

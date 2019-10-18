@@ -4,7 +4,7 @@ public class Woodwork extends Tool{
 
 	static final int price = 8;
 	
-	static int count = 5;
+	public static int count = 5;
 	
 	private Woodwork(String name,int nytNo){
 		this.name=name;

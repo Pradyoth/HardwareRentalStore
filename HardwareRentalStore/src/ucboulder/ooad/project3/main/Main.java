@@ -9,6 +9,12 @@ import ucboulder.ooad.project3.factory.CustomerFactory;
 import ucboulder.ooad.project3.factory.ToolFactory;
 import ucboulder.ooad.project3.entities.Tool;
 import ucboulder.ooad.project3.decorator.AddOnDecorator;
+import ucboulder.ooad.project3.entities.Painting;
+import ucboulder.ooad.project3.entities.Plumbing;
+import ucboulder.ooad.project3.entities.Woodwork;
+import ucboulder.ooad.project3.entities.Yardwork;
+import ucboulder.ooad.project3.entities.Concrete;
+
 
 
 
@@ -34,6 +40,22 @@ public class Main {
 		
 		
 		for (int i = 0 ; i < 34 ; i++) {
+			System.out.println("List of tools in the inventory");
+			if (Painting.count!=0) {
+				System.out.println("Painting tools " +Painting.count);
+			}
+			if (Plumbing.count!=0) {
+				System.out.println("Plumbing tools " +Plumbing.count);
+			}
+			if (Concrete.count!=0) {
+				System.out.println("Concrete tools " +Concrete.count);
+			}
+			if (Woodwork.count!=0) {
+				System.out.println("Woodwork tools " +Woodwork.count);
+			}
+			if (Yardwork.count!=0) {
+				System.out.println("Yardwork tools " +Yardwork.count);
+			}
 			List<Customer> customers = store.getCustomersFromStore();
 			for(Customer customer:customers)
 			{
@@ -48,6 +70,10 @@ public class Main {
 						customerRentalRecordList.get(j).returnRental();
 						temp = j;
 						break;
+					}
+					else {
+						System.out.println("The active rentals are.. ");
+						System.out.println(customerRentalRecordList.get(j));
 					}
 						
 				}
@@ -117,7 +143,9 @@ public class Main {
 					
 					
 				}
-				customer.addRentalRecord(rentalRecord);			
+				customer.addRentalRecord(rentalRecord);
+				System.out.println("Price of the rental record is " +rentalRecord.getTotalPrice());
+				
 			}
 			if (customer.getClass().getSimpleName().equals("RegularCustomer")) {
 				
@@ -171,6 +199,7 @@ public class Main {
 					
 				}
 				customer.addRentalRecord(rentalRecord);
+				System.out.println("Price of the rental record is " +rentalRecord.getTotalPrice());
 			}
 				if (customer.getClass().getSimpleName().equals("CasualCustomer")) {
 				
@@ -224,6 +253,7 @@ public class Main {
 					
 				}
 				customer.addRentalRecord(rentalRecord);
+				System.out.println("Price of the rental record is " +rentalRecord.getTotalPrice());
 				
 				
 				
