@@ -13,4 +13,4 @@ Jay Patel
 1. Import the project into IDE workspace
 2. If you find any error with respect to TestClass, configure build path of Junit library which is presentin lib folder of project.
 3. Run the main class.
-4. Console has the list entire data requested.
+4. Console has the list of entire data requested.
