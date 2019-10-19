@@ -1,0 +1,541 @@
+------ List of tools in the inventory -----
+Painting tools 5
+Plumbing tools 5
+Concrete tools 5
+Woodwork tools 5
+Yardwork tools 4
++++++++++++++++++++++++++++++++++++ Day number : 1 +++++++++++++++++++++++++++++++++++
+Customer Customer5 comes to the store
+He purchases tool Painting2
+Add OnsExtension cord2
+He purchases tool Concrete4
+Add OnsAccessory Kit 4
+Price of the rental record is 78
+Total price that the store made for day is 78
+------ List of tools in the inventory -----
+Painting tools 4
+Plumbing tools 5
+Concrete tools 4
+Woodwork tools 5
+Yardwork tools 4
++++++++++++++++++++++++++++++++++++ Day number : 2 +++++++++++++++++++++++++++++++++++
+Customer Customer9 comes to the store
+He purchases tool Concrete4
+Add OnsAccessory Kit 4
+He purchases tool Yardwork6
+Add OnsProtective Gear Pack6
+Price of the rental record is 99
+Total price that the store made for day is 99
+------ List of tools in the inventory -----
+Painting tools 4
+Plumbing tools 5
+Concrete tools 3
+Woodwork tools 5
+Yardwork tools 3
++++++++++++++++++++++++++++++++++++ Day number : 3 +++++++++++++++++++++++++++++++++++
+Customer Customer10 comes to the store
+He purchases tool Plumbing3
+Add OnsProtective Gear Pack3
+He purchases tool Woodwork5
+Add OnsExtension cord5
+Price of the rental record is 101
+Total price that the store made for day is 101
+------ List of tools in the inventory -----
+Painting tools 4
+Plumbing tools 4
+Concrete tools 3
+Woodwork tools 4
+Yardwork tools 3
++++++++++++++++++++++++++++++++++++ Day number : 4 +++++++++++++++++++++++++++++++++++
+Customer Customer3 comes to the store
+He purchases tool Plumbing3
+Add OnsProtective Gear Pack3
+He purchases tool Woodwork5
+Add OnsExtension cord5
+Price of the rental record is 71
+Total price that the store made for day is 71
+------ List of tools in the inventory -----
+Painting tools 4
+Plumbing tools 3
+Concrete tools 3
+Woodwork tools 3
+Yardwork tools 3
+Painting2 returned by customer Customer5
+Concrete4 returned by customer Customer5
++++++++++++++++++++++++++++++++++++ Day number : 5 +++++++++++++++++++++++++++++++++++
+Customer Customer5 comes to the store
+He purchases tool Concrete4
+Add OnsAccessory Kit 4
+He purchases tool Yardwork6
+Add OnsProtective Gear Pack6
+Price of the rental record is 99
+Total price that the store made for day is 99
+------ List of tools in the inventory -----
+Painting tools 5
+Plumbing tools 3
+Concrete tools 3
+Woodwork tools 3
+Yardwork tools 2
+Plumbing3 returned by customer Customer3
+Woodwork5 returned by customer Customer3
+Concrete4 returned by customer Customer9
+Yardwork6 returned by customer Customer9
++++++++++++++++++++++++++++++++++++ Day number : 6 +++++++++++++++++++++++++++++++++++
+Customer Customer10 comes to the store
+He purchases tool Yardwork6
+Add OnsProtective Gear Pack6
+He purchases tool Painting2
+Add OnsExtension cord2
+Price of the rental record is 93
+Total price that the store made for day is 93
+------ List of tools in the inventory -----
+Painting tools 4
+Plumbing tools 4
+Concrete tools 4
+Woodwork tools 4
+Yardwork tools 2
+Plumbing3 returned by customer Customer10
+Woodwork5 returned by customer Customer10
++++++++++++++++++++++++++++++++++++ Day number : 7 +++++++++++++++++++++++++++++++++++
+Customer Customer10 comes to the store
+He purchases tool Painting2
+Add OnsExtension cord2
+He purchases tool Yardwork6
+Add OnsProtective Gear Pack6
+Price of the rental record is 93
+Total price that the store made for day is 93
+------ List of tools in the inventory -----
+Painting tools 3
+Plumbing tools 5
+Concrete tools 4
+Woodwork tools 5
+Yardwork tools 1
++++++++++++++++++++++++++++++++++++ Day number : 8 +++++++++++++++++++++++++++++++++++
+Customer Customer2 comes to the store
+He purchases tool Painting2
+Add OnsExtension cord2
+He purchases tool Painting2
+Add OnsExtension cord2
+Price of the rental record is 52
+Total price that the store made for day is 52
+------ List of tools in the inventory -----
+Painting tools 1
+Plumbing tools 5
+Concrete tools 4
+Woodwork tools 5
+Yardwork tools 1
+Concrete4 returned by customer Customer5
+Yardwork6 returned by customer Customer5
++++++++++++++++++++++++++++++++++++ Day number : 9 +++++++++++++++++++++++++++++++++++
+Customer Customer6 comes to the store
+He was not able to purchase tool Painting
+He purchases tool Concrete4
+Add OnsAccessory Kit 4
+Price of the rental record is 42
+Total price that the store made for day is 42
+------ List of tools in the inventory -----
+Painting tools 1
+Plumbing tools 5
+Concrete tools 4
+Woodwork tools 5
+Yardwork tools 2
+Painting2 returned by customer Customer2
+Painting2 returned by customer Customer2
+Yardwork6 returned by customer Customer10
+Painting2 returned by customer Customer10
++++++++++++++++++++++++++++++++++++ Day number : 10 +++++++++++++++++++++++++++++++++++
+Customer Customer3 comes to the store
+He purchases tool Yardwork6
+Add OnsProtective Gear Pack6
+He purchases tool Yardwork6
+Add OnsProtective Gear Pack6
+Price of the rental record is 82
+Total price that the store made for day is 82
+------ List of tools in the inventory -----
+Painting tools 4
+Plumbing tools 5
+Concrete tools 4
+Woodwork tools 5
+Yardwork tools 1
+Painting2 returned by customer Customer10
+Yardwork6 returned by customer Customer10
++++++++++++++++++++++++++++++++++++ Day number : 11 +++++++++++++++++++++++++++++++++++
+Customer Customer2 comes to the store
+He purchases tool Woodwork5
+Add OnsExtension cord5
+He purchases tool Painting2
+Add OnsExtension cord2
+Price of the rental record is 58
+Total price that the store made for day is 58
+------ List of tools in the inventory -----
+Painting tools 4
+Plumbing tools 5
+Concrete tools 4
+Woodwork tools 4
+Yardwork tools 2
+Yardwork6 returned by customer Customer3
+Yardwork6 returned by customer Customer3
++++++++++++++++++++++++++++++++++++ Day number : 12 +++++++++++++++++++++++++++++++++++
+Customer Customer8 comes to the store
+He purchases tool Yardwork6
+Add OnsProtective Gear Pack6
+He purchases tool Plumbing3
+Add OnsProtective Gear Pack3
+Price of the rental record is 80
+Total price that the store made for day is 80
+------ List of tools in the inventory -----
+Painting tools 4
+Plumbing tools 4
+Concrete tools 4
+Woodwork tools 4
+Yardwork tools 3
+Woodwork5 returned by customer Customer2
+Painting2 returned by customer Customer2
+Concrete4 returned by customer Customer6
++++++++++++++++++++++++++++++++++++ Day number : 13 +++++++++++++++++++++++++++++++++++
+Customer Customer8 comes to the store
+He purchases tool Woodwork5
+Add OnsExtension cord5
+He purchases tool Concrete4
+Add OnsAccessory Kit 4
+Price of the rental record is 62
+Total price that the store made for day is 62
+------ List of tools in the inventory -----
+Painting tools 5
+Plumbing tools 4
+Concrete tools 4
+Woodwork tools 4
+Yardwork tools 3
+Yardwork6 returned by customer Customer8
+Plumbing3 returned by customer Customer8
++++++++++++++++++++++++++++++++++++ Day number : 14 +++++++++++++++++++++++++++++++++++
+Customer Customer4 comes to the store
+He purchases tool Concrete4
+Add OnsAccessory Kit 4
+He purchases tool Plumbing3
+Add OnsProtective Gear Pack3
+Price of the rental record is 95
+Total price that the store made for day is 95
+------ List of tools in the inventory -----
+Painting tools 5
+Plumbing tools 4
+Concrete tools 3
+Woodwork tools 4
+Yardwork tools 4
+Woodwork5 returned by customer Customer8
+Concrete4 returned by customer Customer8
++++++++++++++++++++++++++++++++++++ Day number : 15 +++++++++++++++++++++++++++++++++++
+Customer Customer11 comes to the store
+He purchases tool Concrete4
+Add OnsAccessory Kit 4
+He purchases tool Plumbing3
+Add OnsProtective Gear Pack3
+Price of the rental record is 69
+Total price that the store made for day is 69
+------ List of tools in the inventory -----
+Painting tools 5
+Plumbing tools 3
+Concrete tools 3
+Woodwork tools 5
+Yardwork tools 4
++++++++++++++++++++++++++++++++++++ Day number : 16 +++++++++++++++++++++++++++++++++++
+Customer Customer11 comes to the store
+He purchases tool Woodwork5
+Add OnsExtension cord5
+He purchases tool Yardwork6
+Add OnsProtective Gear Pack6
+Price of the rental record is 73
+Total price that the store made for day is 73
+------ List of tools in the inventory -----
+Painting tools 5
+Plumbing tools 3
+Concrete tools 3
+Woodwork tools 4
+Yardwork tools 3
+Concrete4 returned by customer Customer11
+Plumbing3 returned by customer Customer11
++++++++++++++++++++++++++++++++++++ Day number : 17 +++++++++++++++++++++++++++++++++++
+Customer Customer2 comes to the store
+He purchases tool Woodwork5
+Add OnsExtension cord5
+He purchases tool Plumbing3
+Add OnsProtective Gear Pack3
+Price of the rental record is 71
+Total price that the store made for day is 71
+------ List of tools in the inventory -----
+Painting tools 5
+Plumbing tools 3
+Concrete tools 4
+Woodwork tools 3
+Yardwork tools 3
+Concrete4 returned by customer Customer4
+Plumbing3 returned by customer Customer4
+Woodwork5 returned by customer Customer11
+Yardwork6 returned by customer Customer11
++++++++++++++++++++++++++++++++++++ Day number : 18 +++++++++++++++++++++++++++++++++++
+Customer Customer2 comes to the store
+He purchases tool Concrete4
+Add OnsAccessory Kit 4
+He purchases tool Plumbing3
+Add OnsProtective Gear Pack3
+Price of the rental record is 69
+Total price that the store made for day is 69
+------ List of tools in the inventory -----
+Painting tools 5
+Plumbing tools 3
+Concrete tools 4
+Woodwork tools 4
+Yardwork tools 4
+Woodwork5 returned by customer Customer2
+Plumbing3 returned by customer Customer2
++++++++++++++++++++++++++++++++++++ Day number : 19 +++++++++++++++++++++++++++++++++++
+Customer Customer4 comes to the store
+He purchases tool Concrete4
+Add OnsAccessory Kit 4
+He purchases tool Painting2
+Add OnsExtension cord2
+Price of the rental record is 78
+Total price that the store made for day is 78
+------ List of tools in the inventory -----
+Painting tools 4
+Plumbing tools 4
+Concrete tools 3
+Woodwork tools 5
+Yardwork tools 4
+Concrete4 returned by customer Customer2
+Plumbing3 returned by customer Customer2
++++++++++++++++++++++++++++++++++++ Day number : 20 +++++++++++++++++++++++++++++++++++
+Customer Customer4 comes to the store
+He purchases tool Yardwork6
+Add OnsProtective Gear Pack6
+He purchases tool Plumbing3
+Add OnsProtective Gear Pack3
+Price of the rental record is 110
+Total price that the store made for day is 110
+------ List of tools in the inventory -----
+Painting tools 4
+Plumbing tools 4
+Concrete tools 4
+Woodwork tools 5
+Yardwork tools 3
++++++++++++++++++++++++++++++++++++ Day number : 21 +++++++++++++++++++++++++++++++++++
+Customer Customer10 comes to the store
+He purchases tool Concrete4
+Add OnsAccessory Kit 4
+He purchases tool Concrete4
+Add OnsAccessory Kit 4
+Price of the rental record is 84
+Total price that the store made for day is 84
+------ List of tools in the inventory -----
+Painting tools 4
+Plumbing tools 4
+Concrete tools 2
+Woodwork tools 5
+Yardwork tools 3
++++++++++++++++++++++++++++++++++++ Day number : 22 +++++++++++++++++++++++++++++++++++
+Customer Customer7 comes to the store
+He purchases tool Plumbing3
+Add OnsProtective Gear Pack3
+He purchases tool Concrete4
+Add OnsAccessory Kit 4
+Price of the rental record is 95
+Total price that the store made for day is 95
+------ List of tools in the inventory -----
+Painting tools 4
+Plumbing tools 3
+Concrete tools 1
+Woodwork tools 5
+Yardwork tools 3
+Concrete4 returned by customer Customer4
+Painting2 returned by customer Customer4
++++++++++++++++++++++++++++++++++++ Day number : 23 +++++++++++++++++++++++++++++++++++
+Customer Customer3 comes to the store
+He purchases tool Yardwork6
+Add OnsProtective Gear Pack6
+He purchases tool Concrete4
+Add OnsAccessory Kit 4
+Price of the rental record is 71
+Total price that the store made for day is 71
+------ List of tools in the inventory -----
+Painting tools 5
+Plumbing tools 3
+Concrete tools 1
+Woodwork tools 5
+Yardwork tools 2
+Yardwork6 returned by customer Customer4
+Plumbing3 returned by customer Customer4
++++++++++++++++++++++++++++++++++++ Day number : 24 +++++++++++++++++++++++++++++++++++
+Customer Customer7 comes to the store
+He was not able to purchase tool Concrete
+He purchases tool Woodwork5
+Add OnsExtension cord5
+Price of the rental record is 48
+Total price that the store made for day is 48
+------ List of tools in the inventory -----
+Painting tools 5
+Plumbing tools 4
+Concrete tools 1
+Woodwork tools 4
+Yardwork tools 3
+Yardwork6 returned by customer Customer3
+Concrete4 returned by customer Customer3
+Concrete4 returned by customer Customer10
+Concrete4 returned by customer Customer10
++++++++++++++++++++++++++++++++++++ Day number : 25 +++++++++++++++++++++++++++++++++++
+Customer Customer11 comes to the store
+He purchases tool Woodwork5
+Add OnsExtension cord5
+He purchases tool Concrete4
+Add OnsAccessory Kit 4
+Price of the rental record is 62
+Total price that the store made for day is 62
+------ List of tools in the inventory -----
+Painting tools 5
+Plumbing tools 4
+Concrete tools 3
+Woodwork tools 3
+Yardwork tools 4
+Plumbing3 returned by customer Customer7
+Concrete4 returned by customer Customer7
++++++++++++++++++++++++++++++++++++ Day number : 26 +++++++++++++++++++++++++++++++++++
+Customer Customer2 comes to the store
+He purchases tool Concrete4
+Add OnsAccessory Kit 4
+He purchases tool Painting2
+Add OnsExtension cord2
+Price of the rental record is 56
+Total price that the store made for day is 56
+------ List of tools in the inventory -----
+Painting tools 4
+Plumbing tools 5
+Concrete tools 3
+Woodwork tools 3
+Yardwork tools 4
+Woodwork5 returned by customer Customer11
+Concrete4 returned by customer Customer11
++++++++++++++++++++++++++++++++++++ Day number : 27 +++++++++++++++++++++++++++++++++++
+Customer Customer2 comes to the store
+He purchases tool Yardwork6
+Add OnsProtective Gear Pack6
+He purchases tool Concrete4
+Add OnsAccessory Kit 4
+Price of the rental record is 71
+Total price that the store made for day is 71
+------ List of tools in the inventory -----
+Painting tools 4
+Plumbing tools 5
+Concrete tools 3
+Woodwork tools 4
+Yardwork tools 3
+Concrete4 returned by customer Customer2
+Painting2 returned by customer Customer2
+Woodwork5 returned by customer Customer7
++++++++++++++++++++++++++++++++++++ Day number : 28 +++++++++++++++++++++++++++++++++++
+Customer Customer3 comes to the store
+He purchases tool Yardwork6
+Add OnsProtective Gear Pack6
+He purchases tool Painting2
+Add OnsExtension cord2
+Price of the rental record is 67
+Total price that the store made for day is 67
+------ List of tools in the inventory -----
+Painting tools 4
+Plumbing tools 5
+Concrete tools 4
+Woodwork tools 5
+Yardwork tools 2
+Yardwork6 returned by customer Customer2
+Concrete4 returned by customer Customer2
++++++++++++++++++++++++++++++++++++ Day number : 29 +++++++++++++++++++++++++++++++++++
+Customer Customer8 comes to the store
+He purchases tool Painting2
+Add OnsExtension cord2
+He purchases tool Yardwork6
+Add OnsProtective Gear Pack6
+Price of the rental record is 67
+Total price that the store made for day is 67
+------ List of tools in the inventory -----
+Painting tools 3
+Plumbing tools 5
+Concrete tools 5
+Woodwork tools 5
+Yardwork tools 2
+Yardwork6 returned by customer Customer3
+Painting2 returned by customer Customer3
++++++++++++++++++++++++++++++++++++ Day number : 30 +++++++++++++++++++++++++++++++++++
+Customer Customer3 comes to the store
+He purchases tool Yardwork6
+Add OnsProtective Gear Pack6
+He purchases tool Yardwork6
+Add OnsProtective Gear Pack6
+Price of the rental record is 82
+Total price that the store made for day is 82
+------ List of tools in the inventory -----
+Painting tools 4
+Plumbing tools 5
+Concrete tools 5
+Woodwork tools 5
+Yardwork tools 1
+Painting2 returned by customer Customer8
+Yardwork6 returned by customer Customer8
++++++++++++++++++++++++++++++++++++ Day number : 31 +++++++++++++++++++++++++++++++++++
+Customer Customer3 comes to the store
+He purchases tool Woodwork5
+Add OnsExtension cord5
+He purchases tool Woodwork5
+Add OnsExtension cord5
+Price of the rental record is 64
+Total price that the store made for day is 64
+------ List of tools in the inventory -----
+Painting tools 5
+Plumbing tools 5
+Concrete tools 5
+Woodwork tools 3
+Yardwork tools 2
+Yardwork6 returned by customer Customer3
+Yardwork6 returned by customer Customer3
++++++++++++++++++++++++++++++++++++ Day number : 32 +++++++++++++++++++++++++++++++++++
+Customer Customer10 comes to the store
+He purchases tool Woodwork5
+Add OnsExtension cord5
+He purchases tool Concrete4
+Add OnsAccessory Kit 4
+Price of the rental record is 90
+Total price that the store made for day is 90
+------ List of tools in the inventory -----
+Painting tools 5
+Plumbing tools 5
+Concrete tools 4
+Woodwork tools 2
+Yardwork tools 4
+Woodwork5 returned by customer Customer3
+Woodwork5 returned by customer Customer3
++++++++++++++++++++++++++++++++++++ Day number : 33 +++++++++++++++++++++++++++++++++++
+Customer Customer10 comes to the store
+He purchases tool Woodwork5
+Add OnsExtension cord5
+He purchases tool Painting2
+Add OnsExtension cord2
+Price of the rental record is 84
+Total price that the store made for day is 84
+------ List of tools in the inventory -----
+Painting tools 4
+Plumbing tools 5
+Concrete tools 4
+Woodwork tools 3
+Yardwork tools 4
++++++++++++++++++++++++++++++++++++ Day number : 34 +++++++++++++++++++++++++++++++++++
+Customer Customer2 comes to the store
+He purchases tool Woodwork5
+Add OnsExtension cord5
+He purchases tool Painting2
+Add OnsExtension cord2
+Price of the rental record is 58
+Total price that the store made for day is 58
+total number of completed rentals
++++++++++++++++++++++++++++++++++++++ Summary +++++++++++++++++++++++++++++
+Total completed rentals is 31
+Total completed rentals for regular customer is 13
+Total completed rentals for business customer is 0
+Total completed rentals for casual customer is 18
+Total profit of store for the entire period 2574
