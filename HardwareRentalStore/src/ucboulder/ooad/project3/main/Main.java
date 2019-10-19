@@ -21,7 +21,12 @@ import ucboulder.ooad.project3.entities.Concrete;
 public class Main {
 
 	public static void main(String[] args) {
+		
+		//Creating store instance	
 		Store store = new Store();
+		
+		
+		//Creating list of 12 Customers
 		for(int i = 0; i < 12 ; i++) {
 			Random randomGenerator = new Random();
 			int randomNumber = randomGenerator.nextInt(3) + 1;
@@ -38,9 +43,12 @@ public class Main {
 			store.addCustomersToStore(customer);
 		}
 		
+		
 		int sumOfAllDaysTotal = 0;
+		
+		//Simulation for first 34 days 
 		for (int i = 0 ; i < 34 ; i++) {
-			System.out.println("List of tools in the inventory");
+			System.out.println("------ List of tools in the inventory -----");
 			if (Painting.count!=0) {
 				System.out.println("Painting tools " +Painting.count);
 			}
@@ -56,7 +64,11 @@ public class Main {
 			if (Yardwork.count!=0) {
 				System.out.println("Yardwork tools " +Yardwork.count);
 			}
+			
 			List<Customer> customers = store.getCustomersFromStore();
+			
+			
+			// Handles the return of rentals on particular day
 			for(Customer customer:customers)
 			{
 				List<RentalRecord> customerRentalRecordList = customer.getRentalRecordList();
@@ -64,34 +76,30 @@ public class Main {
 				for (int j = 0; j < customerRentalRecordList.size(); j++) {
 					int noOfRentedNights = customerRentalRecordList.get(j).getDocoratedTools().get(0).nytNo;
 					int boughtDay = customerRentalRecordList.get(j).returnedDay;
-					//System.out.println(noOfRentedNights+"---"+boughtDay);
+					
 					if(i==(boughtDay+noOfRentedNights)) {
 						
-						customerRentalRecordList.get(j).returnRental();
+						customerRentalRecordList.get(j).returnRental(customer);
 						customerRentalRecordList.get(j).setStatus(false);
-//						temp = j;
-//						break;
 					}
 					else {
-						System.out.println("Customer name: " + customer.getCustomerName() + "has rented ");
+						//System.out.println("Customer name: " + customer.getCustomerName() + " has rented ");
 						
 					}
 						
 				}
-//				if(temp!=-1)
-//				customerRentalRecordList.remove(customerRentalRecordList.get(temp));
+
 			}
 			
 		
 		
 			
 			
-			System.out.println("Day number ------" +(i+1));
+			System.out.println("+++++++++++++++++++++++++++++++++++ Day number : " +(i+1)+" +++++++++++++++++++++++++++++++++++");
+			
 			Random randomGenerator = new Random();
 			int randomNumber = randomGenerator.nextInt(11) + 1;
-//			for (Customer customer : customers) {
-//				System.out.println(customer.getClass().getSimpleName());
-//			}
+
 			Customer customer = customers.get(randomNumber);
 			int totalPrice = -1;
 			System.out.println("Customer " + customer.getCustomerName() + " comes to the store");
@@ -267,7 +275,8 @@ public class Main {
 				
 			}
 				if (totalPrice != -1) {
-					System.out.println("Total price that the store made for day is" +totalPrice);
+					System.out.println("Total price that the store made for day is " +totalPrice);
+					
 				}
 			
 			
@@ -290,7 +299,7 @@ public class Main {
 			for (RentalRecord rentalRecord: customerRentalRecordList) {
 				if (rentalRecord.getStatus() == false ) {
 					totalCompletedRentals++;
-//					System.out.println("type is " +type);
+
 					if (type.equals("RegularCustomer")){
 						countRegular++;
 					}
@@ -302,10 +311,12 @@ public class Main {
 					}
 				}
 			}
-//			if(temp!=-1)
-//			customerRentalRecordList.remove(customerRentalRecordList.get(temp));
+
 		}
-		System.out.println("total completed rentals is " +totalCompletedRentals);
+		
+		//Summary of 34 days
+		System.out.println("+++++++++++++++++++++++++++++++++++++ Summary +++++++++++++++++++++++++++++");
+		System.out.println("Total completed rentals is " +totalCompletedRentals);
 		System.out.println("Total completed rentals for regular customer is " +countRegular);
 		System.out.println("Total completed rentals for business customer is " +countBusiness);
 		System.out.println("Total completed rentals for casual customer is " +countCasual);

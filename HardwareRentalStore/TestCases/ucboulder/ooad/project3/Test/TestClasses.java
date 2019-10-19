@@ -23,8 +23,9 @@ import ucboulder.ooad.project3.factory.ToolFactory;
 public class TestClasses extends TestCase{
 	
 	Tool  t;
+	Customer c;
 	
-	protected void setUp(){
+	public void setUp(){
 		
 	   }
 
@@ -77,7 +78,7 @@ public class TestClasses extends TestCase{
 	      RentalRecord rr = new RentalRecord(3);
 	      rr.addDocoratedTools(dc);
 	      int countBeforeReturing = Yardwork.count;
-	      rr.returnRental();
+	      rr.returnRental(c);
 	      int countAfterReturning = Yardwork.count;
 	      assertTrue(countBeforeReturing+1 == countAfterReturning);
 	   }

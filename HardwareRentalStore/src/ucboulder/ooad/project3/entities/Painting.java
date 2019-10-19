@@ -11,6 +11,8 @@ public class Painting extends Tool{
 		this.nytNo=nytNo;
 	}
 	
+	//Returns an instance of this particular tool from a pool on an on-demand basis. 
+		// Typically reducing the inventory count of this tool when rented.
 	public static Painting getInstance(String name,int nytNo) {
 		
 		if(count > 1) {
@@ -23,12 +25,14 @@ public class Painting extends Tool{
 		
 	}
 	
+	// Returns the rental price for this tool
 	@Override
 	public int getPrice() {
 		
 		return price*nytNo;
 	}
 	
+	//ReStock Inventory when returned by customer
 	@Override
 	public void increaseCount() {
 		

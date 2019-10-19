@@ -18,17 +18,20 @@ public class RentalRecord {
 	
 	public List<AddOnDecorator> docoratedTools = new ArrayList<AddOnDecorator>();
 		
-	
+	//Returns the list of rented tools for a given rental record
 	public List<AddOnDecorator> getDocoratedTools() {
 		return docoratedTools;
 	}
-
+	
+	//Adds a tool to the list of tools for a given rental record
 	public void addDocoratedTools(AddOnDecorator docoratedTool) {
 	//	System.out.println(docoratedTool);
 		docoratedTools.add(docoratedTool);
 		
 		
 	}
+	
+	// Checks whether rental record is active or not
 	public boolean getStatus() {
 		return this.status;
 	}
@@ -36,6 +39,7 @@ public class RentalRecord {
 		this.status = status;
 	}
 
+	// Returns the price of the entire rental record. 
 	public int getTotalPrice() {
 		
 		int price=0;
@@ -49,7 +53,8 @@ public class RentalRecord {
 		return price;
 	}
 	
-	public void returnRental() {
+	// Handles return of a rental and increases the inventory count for the tools present in the rental record. 
+	public void returnRental(Customer c) {
 		
 		//System.out.println(docoratedTools.size());
 		
@@ -77,7 +82,7 @@ public class RentalRecord {
 			}
 			//System.out.println("--"+t.tool);
 			t.tool.increaseCount();
-			System.out.println(t.tool.name + " being returned");
+			System.out.println(t.tool.name + " returned by customer " + c.name);
 					
 			
 			}

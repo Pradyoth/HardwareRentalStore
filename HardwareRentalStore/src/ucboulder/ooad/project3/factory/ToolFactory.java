@@ -10,7 +10,10 @@ import ucboulder.ooad.project3.entities.Tool;
 import ucboulder.ooad.project3.entities.Woodwork;
 import ucboulder.ooad.project3.entities.Yardwork;
 
+
 public class ToolFactory {
+
+	//Tool Factory Class. Takes care of creating required Tools depending on the type. 
 
 	public static Tool getTool(String type,String name,int nytNo) {
 		
@@ -26,7 +29,8 @@ public class ToolFactory {
 		return null;	
 	}
 	
-	
+	//AddOn Factory Class. Takes care of creating required AddOn depending on the type. 
+
 	public static Tool getAddOnTool(String type,String name,Tool tool,int nytNo) {
 	     	
 		if(type.equalsIgnoreCase("AccessoryKit")) return new AccessoryKit(tool, name,nytNo);
