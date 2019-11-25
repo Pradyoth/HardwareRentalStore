@@ -14,7 +14,7 @@ import ucboulder.ooad.project3.entities.RentalRecord;
 public class CustomerFactory {
 
 	
-	//Customer Factory method. Takes care of creating required Customers depending on the type. 
+	//Customer Factory method. Takes care of creating required Customers depending on the type 
 	public static Customer getCustomer(String type,String name) {
      	
 		if(type.equalsIgnoreCase("RegularCustomer")) return new RegularCustomer(name);
